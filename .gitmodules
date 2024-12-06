@@ -1,0 +1,3 @@
+[submodule "cxSite"]
+    path = cxSite
+    url = https://github.com/cxsitem/cxSite.git
