@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'TT Firs Neue Trl';
+    src: url('TTFirsNeueTrl-BoldIt.eot');
+    src: url('TTFirsNeueTrl-BoldIt.eot?#iefix') format('embedded-opentype'),
+        url('TTFirsNeueTrl-BoldIt.woff2') format('woff2'),
+        url('TTFirsNeueTrl-BoldIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Firs Neue Trl';
+    src: url('TTFirsNeueTrl-BlackIt.eot');
+    src: url('TTFirsNeueTrl-BlackIt.eot?#iefix') format('embedded-opentype'),
+        url('TTFirsNeueTrl-BlackIt.woff2') format('woff2'),
+        url('TTFirsNeueTrl-BlackIt.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Firs Neue Trl';
+    src: url('TTFirsNeueTrl-Black.eot');
+    src: url('TTFirsNeueTrl-Black.eot?#iefix') format('embedded-opentype'),
+        url('TTFirsNeueTrl-Black.woff2') format('woff2'),
+        url('TTFirsNeueTrl-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Firs Neue Trl';
+    src: url('TTFirsNeueTrl-DemiBoldIt.eot');
+    src: url('TTFirsNeueTrl-DemiBoldIt.eot?#iefix') format('embedded-opentype'),
+        url('TTFirsNeueTrl-DemiBoldIt.woff2') format('woff2'),
+        url('TTFirsNeueTrl-DemiBoldIt.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Firs Neue Trl';
+    src: url('TTFirsNeueTrl-ExtraBold.eot');
+    src: url('TTFirsNeueTrl-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('TTFirsNeueTrl-ExtraBold.woff2') format('woff2'),
+        url('TTFirsNeueTrl-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Firs Neue Trl';
+    src: url('TTFirsNeueTrl-DemiBold.eot');
+    src: url('TTFirsNeueTrl-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('TTFirsNeueTrl-DemiBold.woff2') format('woff2'),
+        url('TTFirsNeueTrl-DemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Firs Neue Trl';
+    src: url('TTFirsNeueTrl-It.eot');
+    src: url('TTFirsNeueTrl-It.eot?#iefix') format('embedded-opentype'),
+        url('TTFirsNeueTrl-It.woff2') format('woff2'),
+        url('TTFirsNeueTrl-It.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Firs Neue Trl';
+    src: url('TTFirsNeueTrl-ExtraLight.eot');
+    src: url('TTFirsNeueTrl-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('TTFirsNeueTrl-ExtraLight.woff2') format('woff2'),
+        url('TTFirsNeueTrl-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Firs Neue Trl';
+    src: url('TTFirsNeueTrl-Bold.eot');
+    src: url('TTFirsNeueTrl-Bold.eot?#iefix') format('embedded-opentype'),
+        url('TTFirsNeueTrl-Bold.woff2') format('woff2'),
+        url('TTFirsNeueTrl-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Firs Neue Trl';
+    src: url('TTFirsNeueTrl-LightIt.eot');
+    src: url('TTFirsNeueTrl-LightIt.eot?#iefix') format('embedded-opentype'),
+        url('TTFirsNeueTrl-LightIt.woff2') format('woff2'),
+        url('TTFirsNeueTrl-LightIt.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Firs Neue Trl';
+    src: url('TTFirsNeueTrl-ExtraLightIt.eot');
+    src: url('TTFirsNeueTrl-ExtraLightIt.eot?#iefix') format('embedded-opentype'),
+        url('TTFirsNeueTrl-ExtraLightIt.woff2') format('woff2'),
+        url('TTFirsNeueTrl-ExtraLightIt.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Firs Neue Trl';
+    src: url('TTFirsNeueTrl-Light.eot');
+    src: url('TTFirsNeueTrl-Light.eot?#iefix') format('embedded-opentype'),
+        url('TTFirsNeueTrl-Light.woff2') format('woff2'),
+        url('TTFirsNeueTrl-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Firs Neue Trl';
+    src: url('TTFirsNeueTrl-ExtraBoldIt.eot');
+    src: url('TTFirsNeueTrl-ExtraBoldIt.eot?#iefix') format('embedded-opentype'),
+        url('TTFirsNeueTrl-ExtraBoldIt.woff2') format('woff2'),
+        url('TTFirsNeueTrl-ExtraBoldIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Firs Neue Trl';
+    src: url('TTFirsNeueTrl-Medium.eot');
+    src: url('TTFirsNeueTrl-Medium.eot?#iefix') format('embedded-opentype'),
+        url('TTFirsNeueTrl-Medium.woff2') format('woff2'),
+        url('TTFirsNeueTrl-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Firs Neue Trl';
+    src: url('TTFirsNeueTrl-MediumIt.eot');
+    src: url('TTFirsNeueTrl-MediumIt.eot?#iefix') format('embedded-opentype'),
+        url('TTFirsNeueTrl-MediumIt.woff2') format('woff2'),
+        url('TTFirsNeueTrl-MediumIt.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Firs Neue Trl';
+    src: url('TTFirsNeueTrl-ThinIt.eot');
+    src: url('TTFirsNeueTrl-ThinIt.eot?#iefix') format('embedded-opentype'),
+        url('TTFirsNeueTrl-ThinIt.woff2') format('woff2'),
+        url('TTFirsNeueTrl-ThinIt.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Firs Neue Trial Var Roman';
+    src: url('TTFirsNeueTrialVarRoman.eot');
+    src: url('TTFirsNeueTrialVarRoman.eot?#iefix') format('embedded-opentype'),
+        url('TTFirsNeueTrialVarRoman.woff2') format('woff2'),
+        url('TTFirsNeueTrialVarRoman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Firs Neue Trl';
+    src: url('TTFirsNeueTrl-Thin.eot');
+    src: url('TTFirsNeueTrl-Thin.eot?#iefix') format('embedded-opentype'),
+        url('TTFirsNeueTrl-Thin.woff2') format('woff2'),
+        url('TTFirsNeueTrl-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Firs Neue Trial Var';
+    src: url('TTFirsNeueTrialVarItalic.eot');
+    src: url('TTFirsNeueTrialVarItalic.eot?#iefix') format('embedded-opentype'),
+        url('TTFirsNeueTrialVarItalic.woff2') format('woff2'),
+        url('TTFirsNeueTrialVarItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Firs Neue Trl';
+    src: url('TTFirsNeueTrl-Regular.eot');
+    src: url('TTFirsNeueTrl-Regular.eot?#iefix') format('embedded-opentype'),
+        url('TTFirsNeueTrl-Regular.woff2') format('woff2'),
+        url('TTFirsNeueTrl-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
