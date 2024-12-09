@@ -58,24 +58,34 @@
 	
 
 
-//sidebar readmore popup product details
+//header menu
 jQuery(document).ready(function($){
-    // Click on #read-more-pop to open the sidebar
-    $('#read-more-pop').on('click', function() {
-        $('.sidebar-menu').addClass('open');
-    });
+  // Click on #sb-menu to open the sidebar
+  $('#sb-menu').on('click', function() {
+      $('.header-mega-menu').addClass('open');
+  });
 
-    // Click on elements with id #sb-close to close the sidebar
-    $('#sb-close, .sidebar-footer #sb-close').on('click', function() {
-        $('.sidebar-menu').removeClass('open');
-    });
+  // Click on #sb-close to close the sidebar
+  $('#sb-close').on('click', function() {
+      $('.header-mega-menu').removeClass('open');
+  });
 });
 
+//hgroup line effect
+document.addEventListener("DOMContentLoaded", () => {
+  const hgroups = document.querySelectorAll("hgroup");
 
-// Initialize all tooltips
-document.addEventListener('DOMContentLoaded', function () {
-  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-    return new bootstrap.Tooltip(tooltipTriggerEl)
-  })
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add("focused");
+          } else {
+              entry.target.classList.remove("focused");
+          }
+      });
+  }, {
+      threshold: 0.5, // Adjust threshold as needed
+  });
+
+  hgroups.forEach(hgroup => observer.observe(hgroup));
 });
