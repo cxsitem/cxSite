@@ -181,13 +181,13 @@ a {
       left: 0px;
       transition: all ease-in-out 2s;
       will-change: transform;
-      transform: translateX(-100%);
+      // transform: translateX(-100%);
     }
   
     &.focused {
       .border-white::after, .border-dark::after {
         width: 100%;
-        transform: translateX(100%);
+        // transform: translateX(100%);
       }
     }
   
@@ -199,7 +199,7 @@ a {
         display: inline-block;
         background-color: #ffffff;
         position: absolute;
-        z-index: 1;
+        z-index: 0;
         top: 35%;
         transform: translateY(-50%);
         left: 0;
@@ -212,6 +212,234 @@ a {
   
     .border-dark:after {
       background-color: #000;
+    }
+  }
+
+  .primary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding: 0 30px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+    border: 1px solid #000000;
+    text-decoration: none;
+    position: relative;
+    transition: all 1s;
+  
+    &:hover {
+      border-color: #F26E65;
+      color: #F26E65;
+    }
+  
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 8px;
+      width: 8px;
+      background: #000;
+      transition: background 1s;
+    }
+  
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 8px;
+      width: 8px;
+      background: #000;
+      transition: background 1s;
+    }
+  
+    &:hover {
+      &:before {
+        animation: rotateAroundbefore 2s linear infinite;
+        background: #F26E65;
+      }
+  
+      &:after {
+        animation: rotateAroundafter 2s linear infinite;
+        background: #F26E65;
+      }
+    }
+  }
+
+  .btn-outline-light {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding: 0 30px;
+    font-size: 24px;
+    font-weight: 400;
+    border-color:  #fff;
+    text-decoration: none;
+    position: relative;
+    transition: all 1s;
+  
+    &:hover {
+      border-color: #F26E65;
+      color: #F26E65;
+      background-color: transparent;
+    }
+  
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 8px;
+      width: 8px;
+      background: #fff;
+      transition: background 1s;
+    }
+  
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 8px;
+      width: 8px;
+      background: #fff;
+      transition: background 1s;
+    }
+  
+    &:hover {
+      &:before {
+        animation: rotateAroundbefore 2s linear infinite;
+        background: #F26E65;
+      }
+  
+      &:after {
+        animation: rotateAroundafter 2s linear infinite;
+        background: #F26E65;
+      }
+    }
+  }
+
+  .btn-outline-dark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding: 0 30px;
+    font-size: 24px;
+    font-weight: 400;
+    border-color:  #000;
+    text-decoration: none;
+    position: relative;
+    transition: all 1s;
+  
+    &:hover {
+      border-color: #F26E65;
+      color: #F26E65;
+      background-color: transparent;
+    }
+  
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 8px;
+      width: 8px;
+      background: #000;
+      transition: background 1s;
+    }
+  
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 8px;
+      width: 8px;
+      background: #000;
+      transition: background 1s;
+    }
+  
+    &:hover {
+      &:before {
+        animation: rotateAroundbefore 2s linear infinite;
+        background: #F26E65;
+      }
+  
+      &:after {
+        animation: rotateAroundafter 2s linear infinite;
+        background: #F26E65;
+      }
+    }
+  }
+  
+  @keyframes rotateAroundbefore {
+    0% {
+      top: 0;
+      right: 0;
+    }
+  
+    25% {
+      top: calc(100% - 8px);
+      right: 0;
+    }
+  
+    50% {
+      top: calc(100% - 8px);
+      right: calc(100% - 8px);
+    }
+  
+    75% {
+      top: 0;
+      right: calc(100% - 8px);
+    }
+  
+    100% {
+      top: 0;
+      right: 0;
+    }
+  }
+  
+  @keyframes rotateAroundafter {
+    0% {
+      bottom: 0;
+      left: 0;
+    }
+  
+    25% {
+      bottom: calc(100% - 8px);
+      left: 0;
+    }
+  
+    50% {
+      bottom: calc(100% - 8px);
+      left: calc(100% - 8px);
+    }
+  
+    75% {
+      bottom: 0;
+      left: calc(100% - 8px);
+    }
+  
+    100% {
+      bottom: 0;
+      left: 0;
+    }
+  }
+  
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.25, 1.25);
+    }
+    100% {
+      transform: scale(1, 1);
     }
   }
   
@@ -235,7 +463,12 @@ a {
         font-size: 20px;
         color: #fff;
         font-weight: 400;
+
+        &:hover {
+          color: #F26E65;
+        }
       }
+      
     }
   }
   
@@ -377,6 +610,9 @@ a {
       background-position: center top;
       background-size: cover;
     }
+    .container-fluid {
+      padding-left: 180px;
+    }
   
     .heading-lg {
       font-size: 10vw;
@@ -390,8 +626,35 @@ a {
   
     .heading-bottom-video {
       max-width: 240px;
+      line-height: 0;
+
+      video {
+        object-fit: cover;
+        border-radius: 50rem;
+        width: 240px;
+        height: 240px;
+      }
     }
   }
+
+  .about-area {
+    position: relative;
+    overflow: hidden;
+  
+    #svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+  
+      #b-circle-1, #b-circle-2, #w-circle {
+        transition: opacity 0.5s ease-in-out;
+      }
+    }
+  }
+  
   
   /*services css start*/
   
@@ -428,6 +691,10 @@ a {
           color: #fff;
           font-weight: 400;
           padding-left: 20px;
+
+          &:hover{
+            color: #F26E65;
+          }
         }
       }
     }
@@ -456,8 +723,8 @@ a {
   
       li {
         list-style-type: none;
-        padding-bottom: 10px;
-        margin-bottom: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         position: relative;
         border-bottom: 1px solid #00000020;
         line-height: 36px;
@@ -603,34 +870,34 @@ a {
   
       &.top-dot {
         &::before {
-          top: -4px;
-          left: -4px;
+          top: -5px;
+          left: -5px;
           content: "";
         }
   
         &::after {
-          top: -4px;
-          left: -4px;
+          top: -5px;
+          left: -5px;
           content: "";
-          right: -4px;
+          right: -5px;
           left: auto;
         }
       }
   
       &.bottom-dot {
         &::before {
-          bottom: -4px;
+          bottom: -5px;
           top: auto;
-          left: -4px;
+          left: -5px;
           content: "";
         }
   
         &::after {
-          bottom: -4px;
+          bottom: -5px;
           top: auto;
-          left: -4px;
+          left: -5px;
           content: "";
-          right: -4px;
+          right: -5px;
           left: auto;
         }
       }
@@ -651,7 +918,7 @@ a {
         position: absolute;
         z-index: 1;
         top: 0;
-        right: 0;
+        right: -2px;
         clip-path: polygon(100% 0, 0 0, 100% 100%);
       }
   
@@ -836,6 +1103,18 @@ a {
       font-size: 20px;
       font-weight: bold;
     }
+
+    .star-icon a {
+      svg {
+        transition: all ease-in-out 0.5s;
+      }
+      &:hover {
+        svg {
+         transform: rotate(45deg);
+        }
+       }
+    }
+
   }
   
   /*slider arrows*/
@@ -850,19 +1129,40 @@ a {
     right: 70px;
   }
   
-  .lets-chat .lets-chat-block .lets-chat-block-right .lets-chat-block-right-icon {
-    width: 270px;
-    height: 270px;
+  .lets-chat {
+    margin: 0;
+  
+    .lets-chat-block {
+      .lets-chat-block-left .text-black {
+        transition: all ease-in-out 0.5s;
+      }
+    &:hover {
+      .lets-chat-block-left .text-black {
+        color: #ffffff !important;
+      }
+    }
+
+    .lets-chat-block-right .lets-chat-block-right-icon {
+      width: 270px;
+      height: 270px;
+  
+      svg {
+        animation: zoom-in-zoom-out 3s ease-out infinite;
+      }
+    }
   }
+  }
+  
   
   .footer {
     .footer-top .footer-top-right {
       width: 25%;
       max-width: max-content;
   
-      .navi-links li {
-        width: 50%;
-        float: left;
+      .navi-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0 100px;
       }
     }
   

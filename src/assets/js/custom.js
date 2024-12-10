@@ -70,33 +70,37 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // About Section Start
-
 console.clear();
 
+// Select SVG elements
 const svg = document.querySelector("#svg");
 const bCircle1 = document.querySelector("#b-circle-1");
 const wCircle = document.querySelector("#w-circle");
 const bCircle2 = document.querySelector("#b-circle-2");
 const whiteLayer = document.querySelector("#whiteLayer");
+
+// Padding for calculation
 const pad = 4;
 
 let radius1 = +bCircle1.getAttribute("r");
 let radius2 = +bCircle2.getAttribute("r");
 
+// GSAP Timeline
 const tl = gsap.timeline({
   scrollTrigger: {
     trigger: "section.about-area",
-    start: "top 20%", // This triggers when the top of the section reaches 70% of the viewport height
-    end: "bottom center",
-    scrub: 0.2,
-    markers: false,  // Enable markers for debugging the scroll trigger position
+    start: "top top", // Pin starts when the section hits the top of the viewport
+    end: "+=50%", // Duration of the pin and animation
+    scrub: 0.2, // Smooth animation tied to scroll
+    pin: true, // Pin the section during the animation
+    markers: false, // Enable for debugging
   },
   defaults: {
-    duration: 1,
+    duration: 1, // Default duration for animations
   },
 });
 
-
+// Timeline Animations
 tl.to(
   bCircle1,
   {
@@ -104,7 +108,7 @@ tl.to(
       r: () => radius1 * 1.5,
     },
   },
-  0 
+  0 // Start at the beginning
 )
   .to(
     wCircle,
@@ -114,7 +118,7 @@ tl.to(
       },
       opacity: 0.8,
     },
-    0.5 
+    0.5 // Overlap with previous animation
   )
   .to(
     bCircle2,
@@ -123,34 +127,36 @@ tl.to(
         r: () => radius2 * 2,
       },
     },
-    1 
+    1 // Start later
   )
-  
   .to(
     whiteLayer,
     {
-      opacity: 0.5, 
+      opacity: 0.5,
       ease: "power1.inOut",
-      duration: 1, 
+      duration: 1,
     },
-    0.25 
+    0.25 // Overlap with earlier animations
   )
   .to(
     whiteLayer,
     {
-      opacity: 0, 
+      opacity: 0,
       ease: "power1.out",
-      duration: 1.5, 
+      duration: 1.5,
     },
-    1.5 
+    1.5 // Start later
   );
 
+// Adjust on window resize
 window.addEventListener("load", resize);
 window.addEventListener("resize", resize);
 
 function resize() {
+  // Reset progress for timeline
   tl.progress(0);
 
+  // Recalculate radii based on SVG bounding box
   const r = svg.getBoundingClientRect();
   const rectWidth = r.width + pad;
   const rectHeight = r.height + pad;
@@ -161,11 +167,10 @@ function resize() {
   radius1 = Math.sqrt(dx * dx + dy * dy);
   radius2 = radius1 * 1.2;
 
+  // Invalidate timeline and refresh ScrollTrigger
   tl.invalidate();
   ScrollTrigger.refresh();
 }
-
-
 // About Section End
 
 
