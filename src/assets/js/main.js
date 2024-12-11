@@ -89,3 +89,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   hgroups.forEach(hgroup => observer.observe(hgroup));
 });
+
+//our team toggle div code
+jQuery(document).ready(function ($) {
+  // Dynamically handle clicks for multiple instances
+  $('.our-team-slider .star-icon a').click(function () {
+      var parentBlock = $(this).closest('.swiper-slide'); // Find the closest swiper-slide for each item
+
+      // Slide toggle the team description for the clicked item
+      parentBlock.find('.our-team-middle-block-hinfo').slideToggle('slow').toggleClass('active');
+      
+      // Toggle the active class on the clicked star icon
+      $(this).toggleClass('active');
+  });
+});
