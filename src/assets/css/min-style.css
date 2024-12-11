@@ -285,9 +285,8 @@ ul.dark-link-lg li.active a {
 .we-serve-area .we-serve-tabs .we-serve-tabs-content {
     width: 9%;
     padding: 0 7.5px;
-    min-height: 610px;
+    height: 610px;
     transition: width 0.5s ease, background-color 0.5s ease; /* Smooth width transition */
-    height: auto;
     overflow: hidden;
 	cursor:pointer
 }

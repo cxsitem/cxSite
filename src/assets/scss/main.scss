@@ -1235,8 +1235,27 @@ a {
       }
     }
   
-    .footer-middle .footer-middle-socials-box {
-      min-height: 250px;
+    .footer-middle {
+      .footer-middle-box-outer  {
+        transition:  all ease-in-out 0.5s;
+
+        .footer-middle-socials-box {
+          min-height: 250px;
+
+          p {
+            transition:  all ease-in-out 0.5s;
+          }
+        } 
+
+        &:hover {
+          background-color: #00000085;
+        
+          p.text-white {
+            color: #f26e65 !important;
+          }
+        }
+      }
+
     }
   
     .round-top-left::before {
